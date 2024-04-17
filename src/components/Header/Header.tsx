@@ -1,44 +1,34 @@
-import { Box, Flex, Heading, Link, Text, Input, Button } from '@chakra-ui/react'
-import ChangeLanguageModal from './UI/ChangeLanguageModal'
-import React from 'react'
+import {
+	Box,
+	Flex,
+	Link,
+	Text,
+	Input,
+	Button,
+	Image,
+	Divider,
+} from '@chakra-ui/react'
+import React, { useState } from 'react'
 import { SearchIcon } from '@chakra-ui/icons'
-import HumanSVG from '../icons/HumanSVG'
-import CartSVG from '../icons/CartSVG'
+import HumanSVG from '../../icons/HumanSVG'
+import CartSVG from '../../icons/CartSVG'
+import logo from '../../img/logo.svg'
 
 const Header = () => {
-	const [searchInput, setSearchInput] = React.useState('')
+	const [searchInput, setSearchInput] = useState('')
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
 		setSearchInput(event.target.value)
 
 	return (
-		<Box as='header' w='100%' h='100%'>
-			{/* header nav */}
-			<Flex
-				maxW='1200px'
-				p='0 20px'
-				h='40px'
-				direction='row'
-				justify='space-between'
-				m='0 auto'
-				as='nav'
-			>
-				<ChangeLanguageModal defaultName='Language' />
-				<Flex gap='6' h='100%' align='center'>
-					<Link href='#' fontSize='12px' color='#7C818B'>
-						Track Order
-					</Link>
-					<Link href='#' fontSize='12px' color='#7C818B'>
-						Help Center
-					</Link>
-					<Link href='#' fontSize='12px' color='#7C818B'>
-						Compare
-					</Link>
-					<Link href='#' fontSize='12px' color='#7C818B'>
-						Wishlist
-					</Link>
-				</Flex>
-			</Flex>
-			{/* header content */}
+		<Box
+			bg='#fff'
+			as='header'
+			w='100%'
+			h='100%'
+			position='sticky'
+			top='0'
+			zIndex='999'
+		>
 			<Flex
 				maxW='1200px'
 				p='50px 20px'
@@ -48,9 +38,8 @@ const Header = () => {
 				m='0 auto'
 				align='center'
 			>
-				{/* Link logo to self */}
 				<Link>
-					<Heading>LOGO</Heading>
+					<Image src={logo} />
 				</Link>
 				<Flex>
 					<Input
@@ -86,6 +75,7 @@ const Header = () => {
 					</Link>
 				</Flex>
 			</Flex>
+			<Divider />
 		</Box>
 	)
 }
