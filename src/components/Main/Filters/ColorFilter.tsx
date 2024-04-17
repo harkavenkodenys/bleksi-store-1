@@ -55,7 +55,6 @@ const ColorFilter: React.FC = () => {
 					}}
 				/>
 			</Flex>
-			<Divider mt='20px' />
 		</Flex>
 	)
 }
