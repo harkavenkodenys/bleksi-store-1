@@ -9,7 +9,7 @@ import FooterContacts from './FooterContacts'
 import FooterSubscribeForm from './FooterSubcribeForm'
 import FooterNav from './FooterNav'
 
-const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<Box maxW='1200px' p='40px 20px' h='40px' m='0 auto'>
 			<Flex justify='space-between'>

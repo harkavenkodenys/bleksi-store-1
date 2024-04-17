@@ -1,6 +1,6 @@
 import { Flex, Heading, Button, Divider } from "@chakra-ui/react"
 
-const AllCategory = () => {
+const AllCategory: React.FC = () => {
   return (
 		<Flex direction='column' align='flex-start' mt='25px'>
 			<Heading fontSize='16px'>Categories</Heading>

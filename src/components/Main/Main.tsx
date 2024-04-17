@@ -3,7 +3,7 @@ import ContentHeader from './ContentHeader'
 import FilterSidebar from './Filters/FiltersSidebar'
 import ItemCard from './ItemCard'
 
-const Main = () => {
+const Main: React.FC = () => {
 	return (
 		<Box maxW='1200px' p='50px 20px' m='0 auto' h='100%'>
 			<Flex direction='row' h='100%'>
@@ -18,6 +18,10 @@ const Main = () => {
 						gap='3'
 						m='0 auto'
 					>
+						<ItemCard />
+						<ItemCard />
+						<ItemCard />
+						<ItemCard />
 						<ItemCard />
 					</Flex>
 				</Box>

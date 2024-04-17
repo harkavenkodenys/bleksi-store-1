@@ -1,6 +1,6 @@
 import { Flex, Select, Text } from '@chakra-ui/react'
 
-const ContentHeader = () => {
+const ContentHeader: React.FC = () => {
 	return (
 		<Flex align='center' justify='space-between' h='40px' w='100%'>
 			<Flex borderBottom='1px solid gray' p='4px 5px'>

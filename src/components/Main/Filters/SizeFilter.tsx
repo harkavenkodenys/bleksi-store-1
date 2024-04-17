@@ -1,6 +1,6 @@
 import { Flex, Heading, Divider, Badge } from '@chakra-ui/react'
 
-const SizeFilter = () => {
+const SizeFilter: React.FC = () => {
 	return (
 		<Flex direction='column' align='flex-start' mt='25px'>
 			<Heading fontSize='16px'>Size</Heading>

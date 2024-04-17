@@ -1,6 +1,6 @@
 import { Flex, Heading, Badge, Divider } from '@chakra-ui/react'
 
-const ColorFilter = () => {
+const ColorFilter: React.FC = () => {
 	return (
 		<Flex direction='column' align='flex-start' mt='25px'>
 			<Heading fontSize='16px'>Color</Heading>

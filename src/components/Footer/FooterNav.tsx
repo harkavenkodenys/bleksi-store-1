@@ -1,7 +1,7 @@
 import { Flex, Heading, Link, Text, Image } from '@chakra-ui/react'
 import logo from '../../img/logo.svg'
 
-const FooterNav = () => {
+const FooterNav: React.FC = () => {
 	return (
 		<Flex justify='space-between'>
 			<Flex direction='column' maxW='250px  '>

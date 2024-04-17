@@ -2,7 +2,7 @@ import { Flex, Link, Text } from '@chakra-ui/react'
 import CallOutbound from '../../icons/CallOutbound'
 import SendMail from '../../icons/SendMail'
 
-const FooterContacts = () => {
+const FooterContacts: React.FC = () => {
 	return (
 		<Flex gap='12'>
 			<Flex direction='column' color='#1d2128' maxW='150px'>

@@ -14,7 +14,7 @@ import HumanSVG from '../../icons/HumanSVG'
 import CartSVG from '../../icons/CartSVG'
 import logo from '../../img/logo.svg'
 
-const Header = () => {
+const Header: React.FC = () => {
 	const [searchInput, setSearchInput] = useState('')
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
 		setSearchInput(event.target.value)

@@ -1,6 +1,6 @@
 import { Flex, Heading, Input, Button, Text } from '@chakra-ui/react'
 
-const FooterSubscribeForm = () => {
+const FooterSubscribeForm: React.FC = () => {
 	return (
 		<Flex direction='column'>
 			<Heading fontSize='28px' color='#1d2128'>

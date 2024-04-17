@@ -3,7 +3,7 @@ import FavouriteHeart from '../../icons/FavouriteHeart'
 import { useState } from 'react'
 import ball from '../../img/ball.webp'
 
-const ItemCard = () => {
+const ItemCard: React.FC = () => {
 	const [showFavourite, setShowFavourite] = useState(false)
 	const [favourite, setFavourite] = useState(false)
 

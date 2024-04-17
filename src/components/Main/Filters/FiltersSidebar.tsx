@@ -5,7 +5,7 @@ import PriceCategory from './PriceCategory'
 import SizeFilter from './SizeFilter'
 import ColorFilter from './ColorFilter'
 
-const FilterSidebar = () => {
+const FilterSidebar: React.FC = () => {
 	return (
 		<Flex>
 			<Flex w='250px' direction='column'>

@@ -1,7 +1,7 @@
 import { Flex, Link } from "@chakra-ui/react"
 import ChangeLanguageModal from "../UI/ChangeLanguageModal"
 
-const HeaderNav = () => {
+const HeaderNav: React.FC = () => {
 	return (
 		<Flex
 			maxW='1200px'
