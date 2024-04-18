@@ -1,20 +1,17 @@
-import { Box, ChakraProvider, Divider, Heading } from '@chakra-ui/react'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
-import HeaderNav from './components/Header/HeaderNav'
+import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ShowcasePage from './pages/ShowcasePage'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
 	return (
 		<ChakraProvider>
-			<HeaderNav />
-			<Header />
-			<Box maxW='1200px' p='50px 20px' m='0 auto' textAlign='center'>
-				<Heading>Some mega menu</Heading>
-			</Box>
-			<Main />
-			<Divider />
-			<Footer />
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<ShowcasePage />} />
+					<Route path='*' element={<ErrorPage />} />
+				</Routes>
+			</BrowserRouter>
 		</ChakraProvider>
 	)
 }
